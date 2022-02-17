@@ -14,4 +14,11 @@ class HangmanTest {
         testHangman = new Hangman();
     }
 
+    @Test
+    @DisplayName("Class Is Instantiated")
+    public void runHangMan_isObjectIntantaited(){
+
+        assertTrue(testHangman instanceof Hangman);
+    }
+
 }
