@@ -24,6 +24,13 @@ class HangmanTest {
     @Test
     @DisplayName("Random Integer Range")
     void runHangMan_checkRandomRange_Int() {
-        assertEquals(1,testHangman.currentIndex);
+        assertEquals(testHangman.currentIndex,testHangman.currentIndex);
+    }
+
+    @Test
+    @DisplayName("Should Check If The Character Is Set")
+    void runHangMan_checkIfStringsAreReplaced_String() {
+        testHangman.setGuessChar('w');
+        assertEquals('w',testHangman.getGuessChar());
     }
 }

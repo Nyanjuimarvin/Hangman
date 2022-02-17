@@ -9,7 +9,20 @@ public class Hangman {
     private char guessChar;
     private String[] wordsToGuess = {"waldo","berzerk","mongolia"};
 
-   public int currentIndex = ThreadLocalRandom.current().nextInt(wordsToGuess.length);
+    int currentIndex = ThreadLocalRandom.current().nextInt(wordsToGuess.length);
+
+    public void setGuessChar(char guessChar) {
+        this.guessChar = guessChar;
+    }
+
+    public char getGuessChar() {
+        return guessChar;
+    }
+
+    public void wordToGuessAsCharacters(){
+        String hiddenWord = wordsToGuess[currentIndex].replaceAll(".","_");
+        System.out.println(hiddenWord);
+    }
 
 
 }
