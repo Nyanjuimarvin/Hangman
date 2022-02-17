@@ -19,9 +19,9 @@ public class Hangman {
         return guessChar;
     }
 
-    public void wordToGuessAsCharacters(){
+    public String wordToGuessAsCharacters(){
         String hiddenWord = wordsToGuess[currentIndex].replaceAll(".","_");
-        System.out.println(hiddenWord);
+        return hiddenWord;
     }
 
 

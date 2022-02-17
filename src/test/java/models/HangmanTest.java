@@ -29,8 +29,13 @@ class HangmanTest {
 
     @Test
     @DisplayName("Should Check If The Character Is Set")
-    void runHangMan_checkIfStringsAreReplaced_String() {
+    void runHangMan_checkGetterAndSetter() {
         testHangman.setGuessChar('w');
         assertEquals('w',testHangman.getGuessChar());
+    }
+
+    @Test
+    void runHangman_areWordsHiddenAsCharacters_String() {
+        assertEquals(testHangman.wordToGuessAsCharacters(),testHangman.wordToGuessAsCharacters());
     }
 }
