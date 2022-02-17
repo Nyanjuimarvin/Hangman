@@ -21,4 +21,9 @@ class HangmanTest {
         assertTrue(testHangman instanceof Hangman);
     }
 
+    @Test
+    @DisplayName("Random Integer Range")
+    void runHangMan_checkRandomRange_Int() {
+        assertEquals(1,testHangman.currentIndex);
+    }
 }
